@@ -1,10 +1,10 @@
-This ZenPack allows [JMX|http://en.wikipedia.org/wiki/Java_Management_Extensions] [http://docs.oracle.com/javase/tutorial/jmx/notifs/index.html|notifications] to be captured as Zenoss events.
+This ZenPack allows [http://en.wikipedia.org/wiki/Java_Management_Extensions JMX] [http://docs.oracle.com/javase/tutorial/jmx/notifs/index.html notifications] to be captured as Zenoss events.
 
-See [http://wiki.zenoss.org/ZenPack:JMX_Connector|ZenPacks.zenoss.ZenJMX] for a ZenPack that allows polling of metrics from MBean attributes and operations.
+See [http://wiki.zenoss.org/ZenPack:JMX_Connector ZenPacks.zenoss.ZenJMX] for a ZenPack that allows polling of metrics from MBean attributes and operations.
 
 == Usage ==
 
-To collect JMX notifications you must edit ''$ZENHOME/etc/zenjmxnotificationlisterner.conf''. This file must be used to specify which JMX agents to connect to, and what notifications to collect. After modifying this file you must run ``zenjmxnotificationlistener restart`` for the changes to be affected.
+To collect JMX notifications you must edit ''$ZENHOME/etc/zenjmxnotificationlistener.conf''. This file must be used to specify which JMX agents to connect to, and what notifications to collect. After modifying this file you must run ``zenjmxnotificationlistener restart`` for the changes to be affected.
 
 Upon installing the ZenPack a default ``zenjmxnotificationlistener.conf`` will be created with the following contents.
 
