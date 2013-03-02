@@ -27,6 +27,7 @@ build:
 	# Build zenoss-jmx-notification-listener.
 	cd $(JMXNL_DIR) ; \
 	mvn package ; \
+	mkdir -p $(LIB_DIR) ; \
 	cp target/zenoss-jmx-notification-listener-*.jar $(LIB_DIR)
 
 	# Copy configuration files into ZenPack's lib directory.
